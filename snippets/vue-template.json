@@ -61,8 +61,8 @@
     "link ratio":{
         "prefix":"link-radio",
         "body":[
-            "<link-radio-group :value=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
-            "   <link-radio label=\"name\" val=\"value\"/>",
+            "<link-radio-group v-model=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
+            "   <link-radio :label=\"item.name\" :val=\"item.val\"/>",
             "</link-radio-group>"
         ],
         "description":"单选按钮组"
@@ -70,8 +70,8 @@
     "link checkbox":{
         "prefix":"link-checkbox",
         "body":[
-            "<link-radio-group multiple :value=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
-            "   <link-radio label=\"name\" val=\"value\"/>",
+            "<link-radio-group multiple v-model=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
+            "   <link-radio :label=\"item.name\" :val=\"item.val\"/>",
             "</link-radio-group>"
         ],
         "description":"单选按钮组"
