@@ -1,0 +1,103 @@
+{
+    "link button": {
+        "prefix": "link-btn",
+        "body": ["<link-button label=\"$1\" @click=\"$2\"/>"],
+        "description": "按钮"
+    },
+    "link form": {
+        "prefix": "link-form",
+        "body": [
+            "<link-form ref=\"$1\">",
+            "   <link-form-column>",
+            "       <link-form-item label=\"$2\">",
+            "        $3",
+            "   </link-form-column>",
+            "</link-form>"
+        ],
+        "description": "表单"
+    },
+    "link icon":{
+        "prefix":"link-icon",
+        "body":[
+            "<link-icon icon=\"$1\" class=\"$2\"/>"
+        ],
+        "description":"图标"
+    },
+    "link input":{
+        "prefix":"link-input",
+        "body":[
+            "<link-input v-model=\"$1\"/>"
+        ],
+        "description":"输入框"
+    },
+    "link recommend input":{
+        "prefix":"link-input",
+        "body":[
+            "<link-input :recommend=\"$1\" v-model=\"$2\"/>"
+        ],
+        "description":"推荐输入框 ['北京','天津','上海']"
+    },
+    "link recommend lov input":{
+        "prefix":"link-input",
+        "body":[
+            "<link-input recommend-lov=\"$1\" v-model=\"$2\"/>"
+        ],
+        "description":"推荐输入框 指定值列表类型"
+    },
+    "link textarea":{
+        "prefix":"link-textarea",
+        "body":[
+            "<link-textarea width=\"200\" height=\"100\"/>"
+        ],
+        "description":"文本域"
+    },
+    "link input number":{
+        "prefix":"link-input-number",
+        "body":[
+            "<link-input-number v-model=\"$1\"/>"
+        ],
+        "description":"数字输入框"
+    },
+    "link ratio":{
+        "prefix":"link-radio",
+        "body":[
+            "<link-radio-group :value=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
+            "   <link-radio label=\"name\" val=\"value\"/>",
+            "</link-radio-group>"
+        ],
+        "description":"单选按钮组"
+    },
+    "link checkbox":{
+        "prefix":"link-checkbox",
+        "body":[
+            "<link-radio-group multiple :value=\"$1\" v-for=\"(item,index) in $2\" :key=\"index\">",
+            "   <link-radio label=\"name\" val=\"value\"/>",
+            "</link-radio-group>"
+        ],
+        "description":"单选按钮组"
+    },
+    "link date":{
+        "prefix":"link-date",
+        "body":[
+            "<link-datepicker v-model=\"$1\" :max=\"$2\"/>"
+        ],
+        "description":"日期选择"
+    },
+    "link time":{
+        "prefix":"link-time",
+        "body":["<link-timepicker v-model=\"$1\"/>"],
+        "description":"时间选择"
+    },
+    "link select":{
+        "prefix":"link-select",
+        "body":["<link-select v-model=\"$1\" :data=\"$2\" labelKey=\"name\" valKey=\"val\"/>"],
+        "description":"下拉选择"
+    },
+    "link toggle":{
+        "prefix":"link-toggle",
+        "body":["<link-toggle v-model=\"$1\"/>"],
+        "description":"开关按钮"
+    }
+
+    
+}
